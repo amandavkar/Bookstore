@@ -35,8 +35,7 @@ public class BookDAO {
 			} catch (ClassNotFoundException e) {
 				throw new SQLException(e);
 			}
-			jdbcConnection = DriverManager.getConnection(
-										jdbcURL, jdbcUsername, jdbcPassword);
+			jdbcConnection = DriverManager.getConnection(jdbcURL, jdbcUsername, jdbcPassword);
 		}
 	}
 	
