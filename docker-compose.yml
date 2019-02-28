@@ -10,7 +10,7 @@ services:
       - "8000:8080"
 
   db:
-    image: mysqldb
+    image: amandavkar/mysqldb
     environment:
       MYSQL_ROOT_PASSWORD: 123
       MYSQL_USER: atul
