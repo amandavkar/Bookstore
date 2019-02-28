@@ -21,7 +21,7 @@ services:
     ports:
       - "3306:3306"
     volumes:
-      - ./sql:/docker-entrypoint-initdb.d
+      - /sql:/docker-entrypoint-initdb.d
  
   visualizer:
     image: dockersamples/visualizer:stable
