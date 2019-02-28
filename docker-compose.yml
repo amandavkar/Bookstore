@@ -10,7 +10,7 @@ services:
       - "8000:8080"
 
   db:
-    image: mysql
+    image: mysqldb
     environment:
       MYSQL_ROOT_PASSWORD: 123
       MYSQL_USER: atul
@@ -20,8 +20,6 @@ services:
         constraints: [node.hostname == docker-puppet-node1.my.lab]
     ports:
       - "3306:3306"
-    volumes:
-      - /sql:/docker-entrypoint-initdb.d
  
   visualizer:
     image: dockersamples/visualizer:stable
