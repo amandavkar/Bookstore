@@ -15,7 +15,7 @@ services:
     expose:
       - 8080
     networks:
-      - webnet
+      - webnet1
 
   db:
     image: mysql
@@ -34,7 +34,7 @@ services:
     expose:
       - 3306
     networks:
-      - webnet
+      - webnet1
  
   visualizer:
     image: dockersamples/visualizer:stable
@@ -46,8 +46,8 @@ services:
     volumes:
       - "/var/run/docker.sock:/var/run/docker.sock"
     networks:
-      - webnet	  
+      - webnet1 
   
   networks:
-    webnet:
+    webnet1:
       driver: overlay
