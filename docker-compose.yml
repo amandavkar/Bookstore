@@ -5,7 +5,7 @@ services:
     deploy:
       replicas: 5
       placement:
-        constraints: [node.role == manager]	  
+        constraints: [node.role==manager]	  
     ports:
       - "8000:8080"
 
@@ -18,7 +18,7 @@ services:
       MYSQL_PASSWORD: atul
     deploy:
       placement:
-        constraints: [node.role == worker]	
+        constraints: [node.role==worker]	
     ports:
       - "3306:3306"
     volumes:
@@ -28,7 +28,7 @@ services:
     image: dockersamples/visualizer:stable
     deploy:
       placement:
-        constraints: [node.role == worker]
+        constraints: [node.role==worker]
     ports:
       - "8010:8080"
     volumes:
