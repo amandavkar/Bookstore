@@ -13,7 +13,6 @@ services:
     image: mysql
     environment:
       MYSQL_ROOT_PASSWORD: 123
-      MYSQL_DATABASE: bookstore
       MYSQL_USER: atul
       MYSQL_PASSWORD: atul
     deploy:
