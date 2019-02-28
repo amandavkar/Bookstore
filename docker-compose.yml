@@ -14,8 +14,6 @@ services:
       - ./target/bookstore.war:/usr/local/tomcat/
     expose:
       - 8080
-    networks:
-      - webnet1
 
   db:
     image: mysql
@@ -33,8 +31,6 @@ services:
       - ./sql/bookstore.sql:/docker-entrypoint-initdb.d
     expose:
       - 3306
-    networks:
-      - webnet1
  
   visualizer:
     image: dockersamples/visualizer:stable
@@ -45,9 +41,4 @@ services:
       - "8080:8080"
     volumes:
       - "/var/run/docker.sock:/var/run/docker.sock"
-    networks:
-      - webnet1 
-  
-  networks:
-    webnet1:
-      driver: overlay
+      
