@@ -49,4 +49,5 @@ services:
       - webnet	  
   
   networks:
-    - webnet
+    webnet:
+      driver: overlay
