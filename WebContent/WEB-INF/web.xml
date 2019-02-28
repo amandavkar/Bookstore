@@ -8,7 +8,7 @@
 
 	<context-param>
 		<param-name>jdbcURL</param-name>
-		<param-value>jdbc:mysql://192.168.119.133:3306/bookstore</param-value>
+		<param-value>jdbc:mysql://docker-puppet-node1.my.lab:3306/Bookstore</param-value>
 	</context-param>
 
 	<context-param>
