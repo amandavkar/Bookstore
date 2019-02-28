@@ -35,7 +35,7 @@ services:
         constraints: [node.role == worker]	  
     networks:
       - webnet
-	  
+ 
   visualizer:
     image: dockersamples/visualizer:stable
     ports:
