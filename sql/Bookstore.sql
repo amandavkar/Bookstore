@@ -1,6 +1,3 @@
-CREATE DATABASE 'Bookstore';
-USE Bookstore;
-
 CREATE TABLE `book` (
   `book_id` int(11) NOT NULL AUTO_INCREMENT,
   `title` varchar(128) NOT NULL,
