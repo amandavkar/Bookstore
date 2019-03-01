@@ -1,5 +1,6 @@
 FROM mysql:latest
 ENV MYSQL_ROOT_PASSWORD 123
+ENV MYSQL_DATABASE Bookstore
 ENV MYSQL_USER  atul
 ENV MYSQL_PASSWORD atul
 ADD /sql/Bookstore.sql /docker-entrypoint-initdb.d
